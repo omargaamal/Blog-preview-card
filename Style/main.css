@@ -1,0 +1,137 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+
+}
+body{
+    height: 100vh;
+   background-color:hsl(47, 88%, 63%); 
+   display: flex;
+    justify-content: center;
+align-items: center;
+}
+body .container{
+    width: 390px;
+    height: 550px;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid;
+    border-radius: 20px;
+    box-shadow: 12px 10px;
+}
+
+.img-card{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    border-radius: 15px;
+}
+.container .img-card img{
+    border-radius: 15px;
+    
+}
+.content{
+    padding: 30px 0px 0px 30px;
+}
+.learning{
+    padding: 0px 0px 20px 0px;
+}
+.click-1{
+    
+    font-weight: 800;
+    padding: 5px 17px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+.click-1:hover{
+    color:hsl(0, 0%, 100%) ;
+}
+.data{
+  color:   hsl(0, 0%, 7%);
+  font-weight: 500;
+}
+.title{
+    padding-left: 33px;
+    padding-top: 20px;
+}
+.click-2{
+    font-weight: 800;
+    transform: scale(1.1);
+    border-style: none;
+    background-color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.click-2:hover{
+    color:hsl(47, 88%, 63%) ;
+}
+.description{
+    padding-top: 20px;
+    color: hsl(0, 0%, 42%);
+}
+.author{
+    display: flex;
+    padding-top: 20px;
+}
+
+.author-image img{
+    transform: scale(0.8);
+}
+.author-name{
+    padding-top: 20px;
+    transform: scale(0.8);
+    font-weight: 800;
+}
+@media (max-width: 750px) {
+    body .container{
+        width: 325px;
+        height: 550px;
+    }
+    .container .img-card img{
+width: 90%;        
+    }
+    .click-2{
+        transform: scale(1.1);
+        }
+        .title{
+            padding-left: 15px;
+            padding-top: 20px;
+        }
+        .description{
+            padding-top: 25px;
+        }
+        .author{
+            padding-top: 30px;
+        }
+        .content{
+            padding: 20px 0px 0px 20px;
+        }
+
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    body .container{
+        width: 270px;
+        height: 485px;
+    }
+    .container .img-card img{
+width: 90%;        
+    }
+    
+        .title{
+            padding-left: 10px;
+            padding-top: 20px;
+        }
+        .description{
+            padding-top: 25px;
+        }
+        .author{
+            padding-top: 15px;
+        }
+        .content{
+            padding: 20px 0px 0px 20px;
+        }
+
+}
